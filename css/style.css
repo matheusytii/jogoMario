@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 .game-board {
-    width: 80%;
+    width: 100%;
     height: 500px;
     border: 1px solid #333;
     margin: 0 auto;
@@ -15,16 +15,16 @@
 
 .pipe{
     position: absolute;
+    width: 80px;
     bottom: 0;
-    width: 60px;
-    right: -80px;
-    /* left:  120px; */
-    animation: pipe-animation 1.5s infinite linear;
+    animation: pipe-animation 1.5s linear infinite;
+   
+    
 }
 
-.mario{
+.mario {
 width: 150px;
-position: absolute;
+position: absolute; 
 bottom: 0;
 }
 
@@ -35,13 +35,13 @@ bottom: 0;
 }
 
 @keyframes pipe-animation {
-    form{ 
-        right: -80px;
+    from{ 
+        left: 100%;
 
     }
-    to{
-        right: 100%;
-    }
+    to{ 
+        left: -80px;
+    } 
     
 }
 
